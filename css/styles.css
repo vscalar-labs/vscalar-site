@@ -172,3 +172,21 @@ footer {
     margin-right: 16px;
   }
 }
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, #08111f 0%, #123c69 100%);
+  color: white;
+  padding: 90px 8%;
+}
+
+.page-hero h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin: 18px 0;
+  max-width: 900px;
+}
