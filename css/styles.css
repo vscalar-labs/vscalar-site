@@ -48,10 +48,11 @@ body {
 }
 
 .tagline {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4fc3ff;
-    letter-spacing: 0.3px;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #7dd3fc;
+  line-height: 1.35;
+  margin: 22px 0 18px;
 }
 
 h1 {
