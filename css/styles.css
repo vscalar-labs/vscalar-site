@@ -310,3 +310,111 @@ footer {
   border: none;
   border-top: 1px solid #d9e4f2;
 }
+
+/* =====================================================
+   ARTICLE TYPOGRAPHY IMPROVEMENTS
+   ===================================================== */
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.article-page {
+  background: #ffffff;
+  padding: 90px 24px;
+}
+
+.article-container {
+  max-width: 880px;
+  margin: 0 auto;
+  color: #102033;
+  font-family: inherit;
+}
+
+.article-container .eyebrow {
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.article-container h1 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -1.2px;
+  margin: 0 0 24px;
+  color: #061a33;
+}
+
+.article-intro {
+  font-size: 22px;
+  line-height: 1.65;
+  color: #415a77;
+  max-width: 780px;
+}
+
+.article-meta {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.article-container hr {
+  margin: 42px 0 18px;
+  border: none;
+  border-top: 1px solid #d9e4f2;
+}
+
+.article-container h2 {
+  font-size: 32px;
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin-top: 56px;
+  margin-bottom: 18px;
+  color: #073763;
+}
+
+.article-container p {
+  font-size: 19px;
+  line-height: 1.9;
+  color: #34495e;
+  margin: 0 0 24px;
+}
+
+.article-container strong {
+  color: #061a33;
+}
+
+.article-container a {
+  color: #0284c7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .article-page {
+    padding: 60px 18px;
+  }
+
+  .article-container h1 {
+    font-size: 38px;
+  }
+
+  .article-container h2 {
+    font-size: 26px;
+  }
+
+  .article-container p,
+  .article-intro {
+    font-size: 17px;
+  }
+}
