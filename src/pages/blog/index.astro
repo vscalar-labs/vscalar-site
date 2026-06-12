@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+
+// As you add more blog posts, import their frontmatter here
+// or use Astro's content collections (we can upgrade later)
+const posts = [
+  {
+    slug: "human-intelligence-machine-intelligence",
+    category: "AI & Intelligence",
+    title: "Human Intelligence, Machine Intelligence, and the Road to Super Intelligence",
+    excerpt: "How babies learn, why world models matter, and how continuous learning could move AI beyond static LLMs.",
+  }
+];
+---
+
+<Base title="Blog" description="Notes, perspectives, and practical thinking on enterprise transformation, architecture, infrastructure, networks, security, and applied AI.">
+
+  <section class="page-hero">
+    <p class="eyebrow">Insights</p>
+    <h1>Ideas on AI, Human Intelligence, and Infrastructure Intelligence</h1>
+    <p class="subtitle">
+      Notes, perspectives, and practical thinking on enterprise transformation,
+      architecture, infrastructure, networks, security, and applied AI.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Articles</h2>
+    {posts.map(post => (
+      <a class="article-card" href={`/blog/${post.slug}`}>
+        <span class="card-category">{post.category}</span>
+        <h3>{post.title}</h3>
+        <p>{post.excerpt}</p>
+      </a>
+    ))}
+  </section>
+
+</Base>

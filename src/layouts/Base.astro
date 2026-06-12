@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "VScalar builds unified intelligence systems for complex enterprise transformation." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | VScalar</title>
+  <meta name="description" content={description} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="logo"><a href="/">VScalar</a></div>
+    <nav>
+      <a href="/platform">Platform</a>
+      <a href="/research">Research</a>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <slot />
+
+  <footer>
+    <div style="font-size:18px; font-weight:700; margin-bottom:8px;">VScalar</div>
+    <p>Building intelligence systems for enterprise transformation.</p>
+    <p>contact@vscalar.com</p>
+  </footer>
+
+</body>
+</html>

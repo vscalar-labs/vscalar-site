@@ -3,14 +3,14 @@
 }
 
 body {
-	font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   color: #172033;
   background: #f7f9fc;
 }
 
+/* ── Nav ── */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,11 @@ body {
   font-weight: 700;
 }
 
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
 .nav a {
   color: #d9e4f5;
   text-decoration: none;
@@ -32,6 +37,7 @@ body {
   font-size: 15px;
 }
 
+/* ── Hero ── */
 .hero {
   background: linear-gradient(135deg, #08111f 0%, #123c69 100%);
   color: white;
@@ -47,14 +53,17 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .tagline {
-  font-size: 28px;
+  display: block;
+  font-size: 32px;
   font-weight: 800;
   color: #38bdf8;
   line-height: 1.3;
-  margin: 26px 0 22px;
+  margin: 28px 0 24px;
 }
 
 h1 {
@@ -93,6 +102,21 @@ h1 {
   color: white;
 }
 
+/* ── Page hero (inner pages) ── */
+.page-hero {
+  background: linear-gradient(135deg, #08111f 0%, #123c69 100%);
+  color: white;
+  padding: 90px 8%;
+}
+
+.page-hero h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin: 18px 0;
+  max-width: 900px;
+}
+
+/* ── Sections ── */
 .section {
   padding: 70px 8%;
   background: white;
@@ -107,6 +131,15 @@ h2 {
   margin-bottom: 30px;
 }
 
+.large-text {
+  max-width: 950px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+/* ── Cards ── */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -130,9 +163,14 @@ h2 {
   color: #475569;
 }
 
+/* ── Platform dark section ── */
 .platform {
   padding: 80px 8%;
   background: #0f172a;
+  color: white;
+}
+
+.platform h2 {
   color: white;
 }
 
@@ -141,73 +179,10 @@ h2 {
   font-size: 19px;
   line-height: 1.7;
   color: #dbeafe;
+  margin-bottom: 18px;
 }
 
-.pill-row span {
-  display: inline-block;
-  background: white;
-  border: 1px solid #dbe3ef;
-  border-radius: 999px;
-  padding: 12px 18px;
-  margin: 8px;
-  font-weight: 600;
-}
-
-footer {
-  background: #08111f;
-  color: #cbd5e1;
-  padding: 36px 8%;
-}
-
-@media (max-width: 800px) {
-  h1 {
-    font-size: 38px;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav nav {
-    margin-top: 14px;
-  }
-
-  .nav a {
-    margin-left: 0;
-    margin-right: 16px;
-  }
-}
-
-.logo a {
-  color: white;
-  text-decoration: none;
-}
-
-.page-hero {
-  background: linear-gradient(135deg, #08111f 0%, #123c69 100%);
-  color: white;
-  padding: 90px 8%;
-}
-
-.page-hero h1 {
-  font-size: 46px;
-  line-height: 1.1;
-  margin: 18px 0;
-  max-width: 900px;
-}
-
-.large-text {
-  max-width: 950px;
-  font-size: 20px;
-  line-height: 1.7;
-  color: #334155;
-}
-
+/* ── Platform tabs ── */
 .platform-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -229,15 +204,18 @@ footer {
   background: #e0f2fe;
 }
 
-.hero .tagline {
-  display: block;
-  font-size: 32px !important;
-  font-weight: 800 !important;
-  color: #38bdf8 !important;
-  line-height: 1.3 !important;
-  margin: 28px 0 24px !important;
+/* ── Pills ── */
+.pill-row span {
+  display: inline-block;
+  background: white;
+  border: 1px solid #dbe3ef;
+  border-radius: 999px;
+  padding: 12px 18px;
+  margin: 8px;
+  font-weight: 600;
 }
 
+/* ── Blog listing ── */
 .article-card {
   display: block;
   text-decoration: none;
@@ -247,6 +225,7 @@ footer {
   padding: 26px;
   color: #0b2745;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 16px;
 }
 
 .article-card:hover {
@@ -272,60 +251,7 @@ footer {
   letter-spacing: 0.8px;
 }
 
-.article-page {
-  background: #ffffff;
-  padding: 70px 20px;
-}
-
-.article-container {
-  max-width: 850px;
-  margin: 0 auto;
-  color: #102033;
-  font-family: inherit;
-}
-
-.article-container h1 {
-  font-size: 44px;
-  font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: 20px;
-  color: #061a33;
-}
-
-.article-container h2 {
-  font-size: 28px;
-   font-weight: 700;
-  margin-top: 46px;
-  margin-bottom: 18px;
-  color: #073763;
-}
-
-.article-container p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #26384d;
-}
-
-.article-intro {
-  font-size: 22px;
-  color: #415a77;
-}
-
-.article-container hr {
-  margin: 36px 0;
-  border: none;
-  border-top: 1px solid #d9e4f2;
-}
-
-/* =====================================================
-   ARTICLE TYPOGRAPHY IMPROVEMENTS
-   ===================================================== */
-
-body {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
+/* ── Article page ── */
 .article-page {
   background: #ffffff;
   padding: 90px 24px;
@@ -335,7 +261,6 @@ body {
   max-width: 880px;
   margin: 0 auto;
   color: #102033;
-  font-family: inherit;
 }
 
 .article-container .eyebrow {
@@ -377,7 +302,7 @@ body {
 
 .article-container h2 {
   font-size: 32px;
-  font-weight: 750;
+  font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.4px;
   margin-top: 56px;
@@ -392,9 +317,7 @@ body {
   margin: 0 0 24px;
 }
 
-.article-container strong {
-  color: #061a33;
-}
+.article-container strong { color: #061a33; }
 
 .article-container a {
   color: #0284c7;
@@ -402,25 +325,38 @@ body {
   text-decoration: none;
 }
 
-.article-container a:hover {
-  text-decoration: underline;
+.article-container a:hover { text-decoration: underline; }
+
+/* ── Footer ── */
+footer {
+  background: #08111f;
+  color: #cbd5e1;
+  padding: 36px 8%;
 }
 
-@media (max-width: 768px) {
-  .article-page {
-    padding: 60px 18px;
+footer p { margin: 6px 0; font-size: 14px; }
+
+/* ── Responsive ── */
+@media (max-width: 800px) {
+  h1 { font-size: 38px; }
+
+  .cards { grid-template-columns: 1fr; }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .article-container h1 {
-    font-size: 38px;
+  .nav nav { margin-top: 14px; }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 16px;
   }
 
-  .article-container h2 {
-    font-size: 26px;
-  }
-
+  .article-page { padding: 60px 18px; }
+  .article-container h1 { font-size: 38px; }
+  .article-container h2 { font-size: 26px; }
   .article-container p,
-  .article-intro {
-    font-size: 17px;
-  }
+  .article-intro { font-size: 17px; }
 }
