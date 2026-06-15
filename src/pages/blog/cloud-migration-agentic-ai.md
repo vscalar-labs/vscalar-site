@@ -1,5 +1,4 @@
 ---
-
 layout: ../../layouts/BlogPost.astro
 title: "Cloud Migration at Machine Speed with Agentic AI"
 category: "Cloud Migration"
@@ -288,4 +287,3 @@ By combining a Unified Enterprise Data Hub, enterprise knowledge graphs, determi
 The future of cloud migration is not simply automation.
 
 It is autonomous enterprise transformation.
-
