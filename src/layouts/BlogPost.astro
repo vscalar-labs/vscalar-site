@@ -1,0 +1,16 @@
+---
+import Base from './Base.astro';
+const { frontmatter } = Astro.props;
+---
+<Base title={frontmatter.title} description={frontmatter.excerpt}>
+  <main class="article-page">
+    <article class="article-container">
+      <p class="eyebrow">{frontmatter.category}</p>
+      <h1>{frontmatter.title}</h1>
+      <p class="article-intro">{frontmatter.excerpt}</p>
+      <p class="article-meta">{frontmatter.date} &bull; {frontmatter.author} &bull; VScalar Insights</p>
+      <hr />
+      <slot />
+    </article>
+  </main>
+</Base>
