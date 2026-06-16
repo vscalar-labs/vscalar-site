@@ -107,6 +107,8 @@ This allows AI agents to reason about dependencies, risks, migration sequencing,
 
 ## Agentic AI Workflow for Cloud Migration
 
+![Agentic AI Workflow for Cloud Migration](/images/blog/cloud-migration-agentic-ai/cloud-migration.png)
+
 ### Discovery and Assessment Agent
 
 The Discovery Agent continuously gathers infrastructure information from enterprise systems.
