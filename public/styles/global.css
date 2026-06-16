@@ -361,11 +361,22 @@ footer p { margin: 6px 0; font-size: 14px; }
   .article-intro { font-size: 17px; }
 }
 
-/* ── Blog images ── */
+/* Blog images */
 .article-container img {
-  max-width: 100%;
+  width: min(1200px, 95vw);
+  max-width: none;
   height: auto;
-  border-radius: 8px;
-  margin: 24px 0;
   display: block;
+  margin: 32px 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .article-container img {
+    width: 100%;
+    max-width: 100%;
+    margin: 24px 0;
+    transform: none;
+  }
 }
