@@ -254,7 +254,7 @@ h2 {
 /* ── Article page ── */
 .article-page {
   background: #ffffff;
-  padding: 90px 24px;
+  padding: 90px 8%;
 }
 
 .article-container {
@@ -285,7 +285,6 @@ h2 {
   font-size: 22px;
   line-height: 1.65;
   color: #415a77;
-  max-width: 780px;
 }
 
 .article-meta {
@@ -370,4 +369,17 @@ footer p { margin: 6px 0; font-size: 14px; }
   margin: 40px 50%;
   transform: translateX(-50%);
   border-radius: 8px;
+}
+
+.article-container ul, 
+.article-container ol {
+  margin: 0 0 20px;
+  padding-left: 24px;
+}
+
+.article-container li {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 6px;
 }
