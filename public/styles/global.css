@@ -258,7 +258,7 @@ h2 {
 }
 
 .article-container {
-  max-width: 880px;
+  max-width: 1000px;
   margin: 0 auto;
   color: #102033;
 }
@@ -312,9 +312,9 @@ h2 {
 
 .article-container p {
   font-size: 19px;
-  line-height: 1.9;
+  line-height: 1.65;
   color: #34495e;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 
 .article-container strong { color: #061a33; }
@@ -361,22 +361,13 @@ footer p { margin: 6px 0; font-size: 14px; }
   .article-intro { font-size: 17px; }
 }
 
-/* Blog images */
+/* ── Blog images / diagrams ── */
 .article-container img {
-  width: min(1200px, 95vw);
+  display: block;
+  width: min(1100px, 95vw);
   max-width: none;
   height: auto;
-  display: block;
-  margin: 32px 50%;
+  margin: 40px 50%;
   transform: translateX(-50%);
   border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-  .article-container img {
-    width: 100%;
-    max-width: 100%;
-    margin: 24px 0;
-    transform: none;
-  }
 }
