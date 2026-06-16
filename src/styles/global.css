@@ -258,7 +258,7 @@ h2 {
 }
 
 .article-container {
-  max-width: 880px;
+  max-width: 980px;
   margin: 0 auto;
   color: #102033;
 }
@@ -359,4 +359,15 @@ footer p { margin: 6px 0; font-size: 14px; }
   .article-container h2 { font-size: 26px; }
   .article-container p,
   .article-intro { font-size: 17px; }
+}
+
+/* ── Blog images / diagrams ── */
+.article-container img {
+  display: block;
+  width: min(1100px, 95vw);
+  max-width: none;
+  height: auto;
+  margin: 40px 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
 }
