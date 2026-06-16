@@ -258,7 +258,7 @@ h2 {
 }
 
 .article-container {
-  max-width: 980px;
+  max-width: 1000px;
   margin: 0 auto;
   color: #102033;
 }
@@ -312,9 +312,9 @@ h2 {
 
 .article-container p {
   font-size: 19px;
-  line-height: 1.9;
+  line-height: 1.75;
   color: #34495e;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 
 .article-container strong { color: #061a33; }
