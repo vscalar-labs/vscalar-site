@@ -360,3 +360,12 @@ footer p { margin: 6px 0; font-size: 14px; }
   .article-container p,
   .article-intro { font-size: 17px; }
 }
+
+/* ── Blog images ── */
+.article-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 24px 0;
+  display: block;
+}
