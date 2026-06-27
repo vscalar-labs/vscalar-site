@@ -31,3 +31,17 @@ It should be a continuously evolving intelligence system.
 ### Website
 
 https://vscalar.com
+
+
+## Intellectual Property Notice
+
+Copyright © 2026 VScalar. All rights reserved.
+
+This repository is publicly accessible solely for the purpose of hosting and publishing the VScalar website.
+
+No permission is granted to copy, redistribute, modify, reuse, republish, sell, or create derivative works from the source code, content, graphics, diagrams, research materials, branding, or design elements contained within this repository without prior written permission from VScalar.
+
+The ideas, methodologies, research concepts, platform designs, diagrams, and written content presented on the website remain the intellectual property of VScalar unless otherwise stated.
+
+For licensing, partnerships, or permission requests, please contact VScalar through the official website.
+
